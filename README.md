@@ -11,5 +11,5 @@ Swift Storyboard
 #
 
 
-## Swift "Algorithm" (tiếng Việt: thuật toán)
+## Swift "Algorithm" (thuật toán)
 
