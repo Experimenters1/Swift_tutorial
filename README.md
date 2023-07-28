@@ -22,7 +22,7 @@ Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
       var myArray = [1, 2, 3, 4, 5]
     </code>
   </pre>
-  <button class="copy-button" data-clipboard-target=".code-snippet">Copy</button>
+  <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div>
 
 2.Tập hợp (Set): Tập hợp là một tập các phần tử không có thứ tự và không chứa phần tử trùng lặp. <br><br>
