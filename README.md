@@ -16,6 +16,35 @@ Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
 
 ## Swift Data structures (cấu trúc dữ liệu)
 1.Mảng (Array): Là một cấu trúc dữ liệu đơn giản, lưu trữ các phần tử có cùng kiểu dữ liệu theo một thứ tự xác định. Các phần tử trong mảng có thể được truy cập thông qua chỉ số <br><br>
+<div class="code-snippet">
+  <pre>
+    <code>
+      var myArray = [1, 2, 3, 4, 5]
+    </code>
+  </pre>
+  <button class="copy-button" data-clipboard-target=".code-snippet">Copy</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codesnippet/1.5.0/codesnippet.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var clipboard = new ClipboardJS('.copy-button', {
+      target: function (trigger) {
+        return trigger.previousElementSibling;
+      }
+    });
+
+    clipboard.on('success', function (e) {
+      e.clearSelection();
+      alert('Đã sao chép đoạn code!');
+    });
+
+    clipboard.on('error', function (e) {
+      alert('Sao chép không thành công. Hãy thử lại.');
+    });
+  });
+</script>
+
 2.Tập hợp (Set): Tập hợp là một tập các phần tử không có thứ tự và không chứa phần tử trùng lặp. <br><br>
 3.Bộ (Tuple): Bộ là một nhóm các giá trị có thể có các kiểu dữ liệu khác nhau. <br><br>
 4.Từ điển (Dictionary): Từ điển là một tập hợp các cặp key-value không có thứ tự. Bạn có thể truy cập vào các giá trị thông qua key.<br><br>
