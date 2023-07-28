@@ -24,26 +24,6 @@ Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet">Copy</button>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codesnippet/1.5.0/codesnippet.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var clipboard = new ClipboardJS('.copy-button', {
-      target: function (trigger) {
-        return trigger.previousElementSibling;
-      }
-    });
-
-    clipboard.on('success', function (e) {
-      e.clearSelection();
-      alert('Đã sao chép đoạn code!');
-    });
-
-    clipboard.on('error', function (e) {
-      alert('Sao chép không thành công. Hãy thử lại.');
-    });
-  });
-</script>
 
 2.Tập hợp (Set): Tập hợp là một tập các phần tử không có thứ tự và không chứa phần tử trùng lặp. <br><br>
 3.Bộ (Tuple): Bộ là một nhóm các giá trị có thể có các kiểu dữ liệu khác nhau. <br><br>
