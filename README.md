@@ -25,4 +25,13 @@ Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
 
 
 ## Swift "Algorithm" (thuật toán)
+1.Xử lý dữ liệu từ các thành phần UI: Khi người dùng tương tác với các thành phần UI như UITextField, UITableView, hay UICollectionView, bạn cần thu thập dữ liệu nhập vào, thực hiện kiểm tra tính hợp lệ, và xử lý dữ liệu được trả về từ các thành phần này. <br><br>
+2.Quản lý dữ liệu của ứng dụng: Đối với ứng dụng có dữ liệu phức tạp như danh bạ, các mục trong bảng điều khiển, hoặc các phần tử trong danh sách, bạn cần áp dụng các thuật toán quản lý dữ liệu, như cập nhật, thêm mới, xóa bỏ, tìm kiếm dữ liệu một cách hiệu quả.<br><br>
+3.Tích hợp và gọi API từ server: Thuật toán này giúp ứng dụng giao tiếp với các dịch vụ máy chủ bên ngoài thông qua việc gọi API và xử lý dữ liệu được trả về. Phần này thường sử dụng các phương thức như URLSession, Alamofire, hay SwiftyJSON để giao tiếp và xử lý dữ liệu trả về từ máy chủ.<br><br>
+4.Tối ưu hóa hiệu suất: Đảm bảo ứng dụng chạy mượt mà và không gây tốn tài nguyên quá nhiều là một trong những vấn đề quan trọng. Điều này bao gồm tối ưu hóa thời gian phản hồi của ứng dụng, giảm thiểu thiêu thụ pin, và tránh các vấn đề liên quan đến bộ nhớ.<br><br>
+5.Xử lý các vấn đề bất đồng bộ: Đôi khi, việc thực hiện các tác vụ bất đồng bộ, như tải dữ liệu từ internet, có thể gây ra các vấn đề liên quan đến luồng (thread). Thuật toán sử dụng Dispatch Queue và GCD (Grand Central Dispatch) để quản lý các tác vụ bất đồng bộ một cách an toàn và hiệu quả.<br><br>
+6.Thuật toán tùy chỉnh trong giao diện người dùng: Trong trường hợp bạn muốn thay đổi giao diện dựa trên các dữ liệu hoặc tương tác người dùng, bạn cần áp dụng các thuật toán để điều chỉnh các thuộc tính của các thành phần UI một cách động.
+
+
+
 
