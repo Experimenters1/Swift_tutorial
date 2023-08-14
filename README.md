@@ -4,7 +4,7 @@ Swift Storyboard
 #
 
 ## 1. var (Variable):
-+) Biến được khai báo bằng từ khoá "var" có thể thay đổi giá trị sau khi đã được gán.
++) Biến được khai báo bằng từ khoá "var" có thể thay đổi giá trị sau khi đã được gán.<br>
 +) Bạn có thể thay đổi giá trị của biến bất kỳ lúc nào trong phạm vi của biến.
 Ví dụ:
 <div class="code-snippet">
