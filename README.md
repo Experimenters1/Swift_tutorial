@@ -1,6 +1,25 @@
 # Swift_tutorial
 Swift Storyboard
 #
+#
+
+## 1. var (Variable):
++) Biến được khai báo bằng từ khoá "var" có thể thay đổi giá trị sau khi đã được gán.
++) Bạn có thể thay đổi giá trị của biến bất kỳ lúc nào trong phạm vi của biến.
+Ví dụ:
+<div class="code-snippet">
+  <pre>
+    <code>
+      var count = 5
+      count = 10 // Giá trị của biến count được thay đổi thành 10
+
+    </code>
+  </pre>
+  <button class="copy-button" data-clipboard-target=".code-snippet"></button>
+</div>
+
+#
+
 
 ## Swift OOP(Object-Oriented Programming)
 OOP là viết tắt của "Object-Oriented Programming" (Lập trình hướng đối tượng). Đây là một mô hình lập trình phổ biến trong lĩnh vực kỹ thuật phần mềm, trong đó các chương trình được tổ chức thành các đối tượng (objects). Mỗi đối tượng có thuộc tính (attributes) và phương thức (methods) để thực hiện các tác vụ cụ thể. <br> <br>
