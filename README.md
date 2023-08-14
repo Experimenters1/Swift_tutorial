@@ -5,8 +5,8 @@ Swift Storyboard
 
 ## 1. var (Variable):
 +) Biến được khai báo bằng từ khoá "var" có thể thay đổi giá trị sau khi đã được gán.<br>
-+) Bạn có thể thay đổi giá trị của biến bất kỳ lúc nào trong phạm vi của biến.
-Ví dụ:
++) Bạn có thể thay đổi giá trị của biến bất kỳ lúc nào trong phạm vi của biến.<br>
+Ví dụ: 
 <div class="code-snippet">
   <pre>
     <code>
@@ -17,6 +17,24 @@ Ví dụ:
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div> <br>
 
+#
+
+## 2. let (Constant):
++) Hằng số được khai báo bằng từ khoá "let" có giá trị bị cố định và không thể thay đổi sau khi đã được gán. <br>
++) Một khi bạn đã gán giá trị cho hằng số, bạn không thể thay đổi nó nữa. <br>
+Ví dụ:
+<div class="code-snippet">
+  <pre>
+    <code>
+     let pi = 3.14159
+      // pi = 3.14 // Lỗi! Không thể thay đổi giá trị của hằng số pi
+    </code>
+  </pre>
+  <button class="copy-button" data-clipboard-target=".code-snippet"></button>
+</div> <br>
+
+#
+Sự khác biệt chính giữa "var" và "let" là ở tính chất thay đổi giá trị. Khi bạn biết trước rằng một biến sẽ không thay đổi sau khi được gán giá trị ban đầu, bạn nên sử dụng "let" để đảm bảo tính ổn định và an toàn trong mã của bạn.
 #
 
 
