@@ -12,7 +12,6 @@ Ví dụ:
     <code>
       var count = 5
       count = 10 // Giá trị của biến count được thay đổi thành 10
-
     </code>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
