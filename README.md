@@ -70,6 +70,9 @@ enum CarBrand: String, CaseIterable {
     }
 
 ```
+<img width="464" alt="Screenshot 2023-09-03 at 11 49 17 AM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/041c0973-d7ad-46b8-890a-67fcbeeac80f">
+
+
 
 
 
