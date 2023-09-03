@@ -105,6 +105,48 @@ enum CarBrand: String, CaseIterable {
 
 
 ### 3.2. Enum associate values (Giá trị liên kết Enum)
+```swift
+  // enum with associated values
+    enum MercedesModelPrice {
+       case MayBach(price: Int)
+       case AMG_GT(price: Int)
+       case Metris(price: Int)
+       case SprinterWagon(price: Int)
+       case GClass
+    }
+    
+
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        getMercedesPrice(for: .SprinterWagon(price: 200_000))
+
+    }
+    
+    
+    func getMercedesPrice(for mercedesModel: MercedesModelPrice) {
+       switch mercedesModel {
+       case .MayBach(price: let price) where price >= 100_000:
+        print("You just bought yourself a new car")
+
+       case .Metris(price: let price) where price >= 86_000:
+        print("You just bought yourself a new car")
+
+       case .AMG_GT(price: let price)  where price >= 74_000:
+        print("You just bought yourself a new car")
+
+       case .SprinterWagon(price: let price) where price >= 45_000:
+         print("You just bought yourself a new car")
+
+       case .GClass, .SprinterWagon, .Metris, .AMG_GT, .MayBach:
+        print("Insufficient funds. You cant' afford this car at the moment")
+
+       }
+    }
+
+```
 
 
 
