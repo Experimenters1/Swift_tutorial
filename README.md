@@ -37,6 +37,16 @@ Ví dụ:
 Sự khác biệt chính giữa "var" và "let" là ở tính chất thay đổi giá trị. Khi bạn biết trước rằng một biến sẽ không thay đổi sau khi được gán giá trị ban đầu, bạn nên sử dụng "let" để đảm bảo tính ổn định và an toàn trong mã của bạn.
 #
 
+#
+## 3.Swift enums (enumerations)
+### Trong Swift, enum (viết tắt của enumeration) là kiểu dữ liệu do người dùng xác định có một tập hợp các giá trị liên quan cố định.
+### CaseIterable in enumeration cases (CaseIterable trong các trường hợp liệt kê)
+
+
+
+
+#
+
 
 ## Swift OOP(Object-Oriented Programming)
 OOP là viết tắt của "Object-Oriented Programming" (Lập trình hướng đối tượng). Đây là một mô hình lập trình phổ biến trong lĩnh vực kỹ thuật phần mềm, trong đó các chương trình được tổ chức thành các đối tượng (objects). Mỗi đối tượng có thuộc tính (attributes) và phương thức (methods) để thực hiện các tác vụ cụ thể. <br> <br>
