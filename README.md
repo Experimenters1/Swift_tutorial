@@ -149,7 +149,47 @@ enum CarBrand: String, CaseIterable {
 ```
 <img width="314" alt="Screenshot 2023-09-03 at 1 44 47 PM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/d6a46a50-3423-42cf-b527-7611a621c0e6"><br><br>
 
+### 3.2. Enum methods (Phương thức liệt kê)
+```swift
 
+    enum MathOperation {
+        case addition
+        case subtraction
+        case multiplication
+        case division
+        
+        func performOperation(_ num1: Double, _ num2: Double) -> Double {
+            switch self {
+            case .addition:
+                return num1 + num2
+            case .subtraction:
+                return num1 - num2
+            case .multiplication:
+                return num1 * num2
+            case .division:
+                if num2 != 0 {
+                    return num1 / num2
+                } else {
+                    // Handle division by zero
+                    return Double.nan
+                }
+            }
+        }
+    }
+    
+
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        // Sử dụng enum và method
+        let operation = MathOperation.addition
+        let result = operation.performOperation(5.0, 3.0)
+        print("Result of addition: \(result)") // Kết quả của phép cộng: 8.0
+
+    }
+```
 
 #
 #
