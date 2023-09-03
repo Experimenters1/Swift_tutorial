@@ -42,7 +42,9 @@ Sự khác biệt chính giữa "var" và "let" là ở tính chất thay đổi
 
 ## 3.Swift enums (enumerations)
 ### Trong Swift, enum (viết tắt của enumeration) là kiểu dữ liệu do người dùng xác định có một tập hợp các giá trị liên quan cố định.
-### CaseIterable in enumeration cases (CaseIterable trong các trường hợp liệt kê)
+### 3.1. CaseIterable in enumeration cases (CaseIterable trong các trường hợp liệt kê)
+**CaseIterable** là loại cung cấp tập hợp tất cả các giá trị của một bảng liệt kê. Nó được sử dụng để lặp lại tất cả các trường hợp trong một enum.
+
 
 
 
