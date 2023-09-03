@@ -101,7 +101,7 @@ enum CarBrand: String, CaseIterable {
     }
 
 ```
-<img width="441" alt="Screenshot 2023-09-03 at 1 31 19 PM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/b7d51198-b1b2-4599-be6c-cb7ebc6fc80f">
+<img width="441" alt="Screenshot 2023-09-03 at 1 31 19 PM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/b7d51198-b1b2-4599-be6c-cb7ebc6fc80f"><br><br>
 
 
 ### 3.2. Enum associate values (Giá trị liên kết Enum)
