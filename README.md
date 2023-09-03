@@ -149,7 +149,7 @@ enum CarBrand: String, CaseIterable {
 ```
 <img width="314" alt="Screenshot 2023-09-03 at 1 44 47 PM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/d6a46a50-3423-42cf-b527-7611a621c0e6"><br><br>
 
-### 3.2. Enum methods (Phương thức liệt kê)
+### 3.3. Enum methods (Phương thức liệt kê)
 ```swift
 
     enum MathOperation {
@@ -191,8 +191,39 @@ enum CarBrand: String, CaseIterable {
     }
 ```
 <img width="341" alt="Screenshot 2023-09-03 at 2 04 57 PM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/33ebb202-497f-48c6-8bd7-bc20ac39c9ea"><br><br>
+#
+#
 
+```swift
 
+  enum PizzaSize {
+      case small, medium, large
+    }
+
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        // Sử dụng enum và method
+        var size = PizzaSize.medium
+
+        switch(size) {
+          case .small:
+            print("I ordered a small size pizza.")
+
+          case .medium:
+            print("I ordered a medium size pizza.")
+
+           case .large:
+             print("I ordered a large size pizza.");
+        }
+
+    }
+    
+
+```
+<img width="287" alt="Screenshot 2023-09-03 at 2 11 45 PM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/d56bd4bb-db87-4d62-a836-0fde95251e48"><br><br>
 
 
 #
