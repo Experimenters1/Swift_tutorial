@@ -72,7 +72,37 @@ enum CarBrand: String, CaseIterable {
 ```
 <img width="464" alt="Screenshot 2023-09-03 at 11 49 17 AM" src="https://github.com/Experimenters1/Swift_tutorial/assets/64000769/041c0973-d7ad-46b8-890a-67fcbeeac80f">
 
+```swift
 
+enum CarBrand: String, CaseIterable {
+        case Mercedes = "Known for luxury and iconic design. Definitely my fav!"
+        case Toyota = "Known for high-quality, high-value cars"
+        case Volkswagen = "This is the people's car"
+        case Ford = "Known for crisp handling, absorbent ride, and solid feel"
+        case Honda = "Known for their well-built, reliable cars"
+    }
+    
+
+    
+ 
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        print(carKnownFor(brand: .Ford))
+        print( carKnownFor(brand: .Mercedes))
+
+    }
+    
+    
+    func carKnownFor(brand: CarBrand) -> String {
+        return brand.rawValue
+    }
+
+```
+
+### 3.2. CaseIterable in enumeration cases (CaseIterable trong các trường hợp liệt kê)
 
 
 
