@@ -46,6 +46,30 @@ Sự khác biệt chính giữa "var" và "let" là ở tính chất thay đổi
 **CaseIterable** là loại cung cấp tập hợp tất cả các giá trị của một bảng liệt kê. Nó được sử dụng để lặp lại tất cả các trường hợp trong một enum.
 Để làm điều này, hãy thêm vào **CaseIterablesau** tên của enum. Với điều đó, Swift sẽ cấp cho chúng ta quyền truy cập vào bộ sưu tập tất cả các trường hợp thông qua một thuộc tính trên kiểu liệt kê được gọi là **allCases**.
 
+```swift
+enum CarBrand: String, CaseIterable {
+        case Mercedes = "Known for luxury and iconic design. Definitely my fav!"
+        case Toyota = "Known for high-quality, high-value cars"
+        case Volkswagen = "This is the people's car"
+        case Ford = "Known for crisp handling, absorbent ride, and solid feel"
+        case Honda = "Known for their well-built, reliable cars"
+    }
+    
+ 
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        print(CarBrand.allCases.count)
+        print("")
+        for brand in CarBrand.allCases {
+            print(brand.rawValue)
+        }
+
+    }
+
+```
 
 
 
