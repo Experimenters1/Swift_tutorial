@@ -228,6 +228,8 @@ enum CarBrand: String, CaseIterable {
 
 #
 #
+##  [Shorthand for guard else empty return statement](https://forums.swift.org/t/shorthand-for-guard-else-empty-return-statement/34404) <br><br>
+
 Dòng mã **guard let url = url else { return }** trong Swift có nghĩa là bạn đang kiểm tra xem biến **url** có giá trị không **nil**. Nếu **url** là **nil**, chương trình sẽ thoát ra khỏi phạm vi hiện tại (thông qua return hoặc throw hoặc một số lệnh khác).
 
 **Dưới đây là một ví dụ để hiểu rõ hơn:**
