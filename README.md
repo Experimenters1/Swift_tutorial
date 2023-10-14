@@ -228,6 +228,35 @@ enum CarBrand: String, CaseIterable {
 
 #
 #
+Dòng mã **guard let url = url else { return }** trong Swift có nghĩa là bạn đang kiểm tra xem biến **url** có giá trị không **nil**. Nếu **url** là **nil**, chương trình sẽ thoát ra khỏi phạm vi hiện tại (thông qua return hoặc throw hoặc một số lệnh khác).
+
+**Dưới đây là một ví dụ để hiểu rõ hơn:**
+```swift
+func processURL(_ urlString: String?) {
+    // Chuyển đổi urlString thành URL nếu có thể
+    guard let url = URL(string: urlString ?? "") else {
+        // Nếu không thể chuyển đổi thành URL, thoát khỏi hàm
+        print("URL không hợp lệ")
+        return
+    }
+    
+    // Nếu đã qua được guard, tức là url không nil và đã được chuyển đổi thành URL
+    // Bạn có thể tiếp tục xử lý url ở đây
+    print("Xử lý URL: \(url)")
+}
+
+// Sử dụng hàm với một URL hợp lệ
+processURL("https://www.example.com")
+
+// Sử dụng hàm với một URL không hợp lệ
+processURL(nil)
+
+
+```
+Trong ví dụ này, chúng ta sử dụng **guard let** để kiểm tra và chuyển đổi một chuỗi thành **URL**. Nếu chuỗi không hợp lệ hoặc **nil**, chúng ta thoát ra khỏi hàm và in ra thông báo "URL không hợp lệ". Nếu chuỗi có thể chuyển đổi thành URL, chúng ta tiếp tục xử lý URL đó.
+
+#
+#
 
 
 ## Swift OOP(Object-Oriented Programming)
