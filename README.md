@@ -258,6 +258,21 @@ processURL(nil)
 Trong ví dụ này, chúng ta sử dụng **guard let** để kiểm tra và chuyển đổi một chuỗi thành **URL**. Nếu chuỗi không hợp lệ hoặc **nil**, chúng ta thoát ra khỏi hàm và in ra thông báo "URL không hợp lệ". Nếu chuỗi có thể chuyển đổi thành URL, chúng ta tiếp tục xử lý URL đó.
 
 #
+##  [How to extract all email address from text in swift](https://stackoverflow.com/questions/28586929/how-to-extract-all-email-address-from-text-in-swift) <br><br>
+
+Mã **.replacingOccurrences(of: "@gmail.com", with: "")** trong **Swift 5** được sử dụng để thay thế tất cả các chuỗi **@gmail.com** bằng một chuỗi trống **("")** trong một chuỗi đầu vào. Điều này có thể được sử dụng để loại bỏ hoặc thay thế một phần cụ thể của chuỗi trong Swift.
+
+Dưới đây là một ví dụ minh họa:
+```swift
+let email = "john.doe@gmail.com"
+let modifiedEmail = email.replacingOccurrences(of: "@gmail.com", with: "")
+
+print(modifiedEmail)
+
+```
+![Screenshot 2023-10-16 at 10 40 52 AM](https://github.com/Experimenters1/Swift_tutorial/assets/64000769/e1f38719-d5b5-4d8c-b39f-25ce6b5e4319)
+
+
 #
 
 
