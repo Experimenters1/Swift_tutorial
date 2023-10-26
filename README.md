@@ -3,6 +3,17 @@ Swift Storyboard
 #
 #
 
+### Keywords in search
+<div class="code-snippet">
+  <pre>
+    <code>
+      how to make : làm thế nào để làm
+    </code>
+  </pre>
+  <button class="copy-button" data-clipboard-target=".code-snippet"></button>
+</div> <br>
+
+
 ## 1. var (Variable):
 +) Biến được khai báo bằng từ khoá "var" có thể thay đổi giá trị sau khi đã được gán.<br>
 +) Bạn có thể thay đổi giá trị của biến bất kỳ lúc nào trong phạm vi của biến.<br>
