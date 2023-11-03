@@ -294,7 +294,7 @@ OOP là viết tắt của "Object-Oriented Programming" (Lập trình hướng 
 
 Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
 1.Kế thừa (Inheritance):<br><br>
-Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:
+Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:<br><br>
 
 **1.1.Tên và cú pháp:**
 
@@ -316,6 +316,12 @@ Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khá
 + )**Protocol** trong **Swift** có thể được áp dụng cho nhiều kiểu dữ liệu khác nhau, bao gồm cả **class, struct, và enum.**
 + )Giao diện trong các ngôn ngữ khác thường chỉ áp dụng cho các lớp **(class)** hoặc một kiểu dữ liệu cụ thể.
 
+Trong lập trình **Swift**, **"protocol"** là một phần quan trọng của ngôn ngữ được sử dụng để định nghĩa một tập hợp các yêu cầu **(requirements)** hoặc giao diện mà một lớp **(class)**, cấu trúc **(struct)**, hoặc **enum (enumeration)** phải tuân theo. Các **protocol** định nghĩa một bộ các phương thức, thuộc tính và/hoặc yêu cầu khác mà một kiểu dữ liệu cụ thể cần phải triển khai.
+
+
+Ví dụ, bạn có thể tạo một **protocol** để đại diện cho các phương tiện vận chuyển:<br> <br>
+
+
 ```swift
 protocol Vehicle {
     var numberOfWheels: Int { get }
@@ -324,8 +330,10 @@ protocol Vehicle {
 }
 
 ```
+Sau đó, bạn có thể tạo các lớp hoặc cấu trúc mới tuân theo **protocol** này và triển khai các yêu cầu cụ thể của nó:<br> <br>
 
 ```swift
+
 class Car: Vehicle {
     var numberOfWheels: Int = 4
     
