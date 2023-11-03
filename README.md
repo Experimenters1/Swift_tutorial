@@ -294,6 +294,52 @@ OOP là viết tắt của "Object-Oriented Programming" (Lập trình hướng 
 
 Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
 1.Kế thừa (Inheritance):<br><br>
+Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:
+
+**1.1.Tên và cú pháp:**
+
++ ) Trong **Swift**, chúng ta sử dụng từ khóa **"protocol"** để định nghĩa một **protocol**. Cú pháp định nghĩa **protocol** như sau: **protocol MyProtocol { ... }**.
++ ) Trong một số ngôn ngữ khác như **Java hoặc C#**, chúng ta sử dụng từ khóa **"interface"** để định nghĩa một giao diện. Cú pháp định nghĩa giao diện như sau: **interface MyInterface { ... }.**
+
+**1.2.Kế thừa:**
+
++ ) Một lớp **(class)** trong Swift có thể kế thừa từ nhiều **protocol** khác nhau bằng cách liệt kê chúng sau từ khóa **"class"**. Ví dụ: **class MyObject: Protocol1, Protocol2 { ... }.**
++ ) Trong một số ngôn ngữ khác, một lớp chỉ có thể kế thừa từ một lớp cha và triển khai một giao diện. **Swift** cho phép mô hình đa kế thừa bằng cách sử dụng nhiều **protocol**.
+
+**1.3.Triển khai :**
+
++ ) Một lớp trong **Swift** có thể triển khai nhiều **protocol** và phải cung cấp triển khai cho tất cả các yêu cầu của các **protocol** đó.
++ ) Một lớp triển khai một giao diện trong các ngôn ngữ khác phải thực hiện tất cả các phương thức của giao diện đó.
+
+**1.4.Khả năng :**
+
++ )**Protocol** trong **Swift** có thể được áp dụng cho nhiều kiểu dữ liệu khác nhau, bao gồm cả **class, struct, và enum.**
++ )Giao diện trong các ngôn ngữ khác thường chỉ áp dụng cho các lớp **(class)** hoặc một kiểu dữ liệu cụ thể.
+
+```swift
+protocol Vehicle {
+    var numberOfWheels: Int { get }
+    func startEngine()
+    func stopEngine()
+}
+
+```
+
+```swift
+class Car: Vehicle {
+    var numberOfWheels: Int = 4
+    
+    func startEngine() {
+        // Code để bật động cơ của xe hơi
+    }
+    
+    func stopEngine() {
+        // Code để tắt động cơ của xe hơi
+    }
+}
+
+```
+
 2.Đóng gói (Encapsulation):<br><br>
 3.Đa hình (Polymorphism): <br><br>
 
