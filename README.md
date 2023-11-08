@@ -359,6 +359,7 @@ class Car: Vehicle {
   <pre>
     <code>
       var myArray = [1, 2, 3, 4, 5]
+      var Myfriend: [String] = [] // Khai báo mảng Myfriend và gán giá trị rỗng cho nó
     </code>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
