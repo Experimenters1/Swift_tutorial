@@ -239,6 +239,19 @@ enum CarBrand: String, CaseIterable {
 
 #
 #
+
++) Sử dụng **UITableView** thay vì **UIScrollView** có thể là một quyết định tốt trong nhiều trường hợp khi bạn cần hiển thị danh sách dữ liệu. Dưới đây là một số lý do:<br><br>
+1. Hiệu năng tốt hơn: **UITableView** đã được tối ưu hóa để hiển thị danh sách dữ liệu lớn. Nó sẽ chỉ hiển thị các dòng dữ liệu thực sự có trên màn hình và có khả năng tái sử dụng các **cell**, giúp giảm tải hiệu năng và tiết kiệm bộ nhớ.<br><br>
+2. Sắp xếp và tìm kiếm dễ dàng: **UITableView** đi kèm với các tính năng tích hợp để sắp xếp, tìm kiếm và lọc dữ liệu một cách dễ dàng. Nếu bạn muốn thêm các tính năng này vào **UIScrollView**, bạn sẽ cần phải tự xây dựng chúng.<br><br>
+3. Hỗ trợ cho cảnh báo và cập nhật dữ liệu dễ dàng: **UITableView** có hỗ trợ cho cảnh báo và cập nhật dữ liệu thông qua **DataSource** và **Delegate**, giúp bạn thay đổi dữ liệu và giao diện một cách linh hoạt.<br><br>
+4. Tích hợp dễ dàng với dữ liệu từ nguồn bên ngoài: **UITableView** thường được kết hợp với các nguồn dữ liệu như **Core Data** hoặc **API** để hiển thị dữ liệu từ nguồn này một cách dễ dàng.<br><br>
+5. Thư viện **UI** tùy chỉnh: Bạn có thể dễ dàng tạo các **cell** tùy chỉnh cho **UITableView** và thậm chí tạo các kiểu hiển thị dữ liệu khác nhau dựa trên loại **cell.** <br><br>
+
+Tuy nhiên, cũng cần lưu ý rằng trong một số trường hợp, sử dụng **UIScrollView** có thể là lựa chọn tốt hơn, như khi bạn cần một giao diện không đều đặn hoặc không phải là danh sách dữ liệu cố định. Điều quan trọng là lựa chọn giữa **UITableView** và **UIScrollView** phụ thuộc vào yêu cầu cụ thể của ứng dụng của bạn và tính linh hoạt mà bạn cần.<br><br>
+
+
+#
+#
 ##  [Shorthand for guard else empty return statement](https://forums.swift.org/t/shorthand-for-guard-else-empty-return-statement/34404) <br><br>
 
 Dòng mã **guard let url = url else { return }** trong Swift có nghĩa là bạn đang kiểm tra xem biến **url** có giá trị không **nil**. Nếu **url** là **nil**, chương trình sẽ thoát ra khỏi phạm vi hiện tại (thông qua return hoặc throw hoặc một số lệnh khác).
