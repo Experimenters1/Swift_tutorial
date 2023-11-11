@@ -8,6 +8,7 @@ Swift Storyboard
   <pre>
     <code>
       how to make : làm thế nào để làm
+      multiple  : nhiều
     </code>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
