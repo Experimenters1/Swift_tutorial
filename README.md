@@ -431,8 +431,7 @@ class Car: Vehicle {
       
       let emptyString = ""
       
-      var emptyString: String = ""
-      
+      var emptyString: String = ""  
     </code>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
