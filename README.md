@@ -428,6 +428,8 @@ class Car: Vehicle {
   <pre>
     <code>
       var myString = "Hello, World!"
+      let emptyString = ""
+      var emptyString: String = ""
     </code>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
