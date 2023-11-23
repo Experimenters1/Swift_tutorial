@@ -428,9 +428,7 @@ class Car: Vehicle {
   <pre>
     <code>
       var myString = "Hello, World!"
-      
-      let emptyString = ""
-      
+      let emptyString = "" 
       var emptyString: String = ""  
     </code>
   </pre>
