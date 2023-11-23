@@ -57,6 +57,19 @@ Ví dụ:
 Sự khác biệt chính giữa "var" và "let" là ở tính chất thay đổi giá trị. Khi bạn biết trước rằng một biến sẽ không thay đổi sau khi được gán giá trị ban đầu, bạn nên sử dụng "let" để đảm bảo tính ổn định và an toàn trong mã của bạn.
 #
 
+## Nếu bạn có một biến downloadURL có kiểu dữ liệu URL và bạn muốn chuyển nó thành một chuỗi (String), bạn có thể sử dụng phương thức absoluteString của đối tượng URL. Dưới đây là cách bạn có thể thực hiện điều đó trong Swift:
+```swift
+var downloadURL: URL?
+downloadURL = URL(string: "https://www.example.com")
+let downloadURL = // your URL here
+let emptyString = downloadURL.absoluteString
+
+```
+#
+## Muốn nó chuyển từ   một chuỗi (String) thành kiểu dữ liệu URL :
+```swift
+let downloadURL1 = URL(string: emptyString)
+```
 #
 #
 
