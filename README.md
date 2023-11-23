@@ -13,7 +13,7 @@ Swift Storyboard
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div> <br>
-
+##
 ## Để in ra kiểu của một biến trong Swift, bạn có thể sử dụng hàm type(of:). Dưới đây là một ví dụ:
 ```swift
 let myVariable = "Hello, Swift!"
@@ -21,7 +21,7 @@ let myVariable = "Hello, Swift!"
 print("Kiểu của biến là: \(type(of: myVariable))")
 
 ```
-
+##
 ## 1. var (Variable):
 +) Biến được khai báo bằng từ khoá "var" có thể thay đổi giá trị sau khi đã được gán.<br>
 +) Bạn có thể thay đổi giá trị của biến bất kỳ lúc nào trong phạm vi của biến.<br>
