@@ -9,6 +9,7 @@ Swift Storyboard
     <code>
       how to make : làm thế nào để làm
       multiple  : nhiều
+      option : Quyền chọn
     </code>
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
