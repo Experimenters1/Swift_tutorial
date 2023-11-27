@@ -74,6 +74,39 @@ let downloadURL1 = URL(string: emptyString)
 #
 #
 
+## Trong Swift 5, để khai báo một biến có kiểu UIImage, bạn có thể sử dụng cú pháp sau:
+```swift
+var myImage: UIImage
+var myImage: UIImage = UIImage()
+var myImage: UIImage = UIImage(named: "ten_hinh_anh")
+```
+```swift
+class HomeViewController: UIViewController {
+
+    @IBOutlet weak var User: UILabel!
+    @IBOutlet weak var Img_account: UIImageView!
+    @IBOutlet weak var Photos1: UIButton!
+    @IBOutlet weak var Camera: UIButton!
+
+    var selectedImageName: String?
+    
+    var ImgURL_Home: String = ""
+    var isLandscape: Bool = false
+    var progressHUD: JGProgressHUD!
+
+    // Khai báo biến kiểu UIImage
+    var accountImage: UIImage?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Gán hình ảnh từ Img_account vào biến accountImage
+        accountImage = Img_account.image
+    }
+}
+
+```
+
 ## 3.Swift enums (enumerations)
 ### Trong Swift, enum (viết tắt của enumeration) là kiểu dữ liệu do người dùng xác định có một tập hợp các giá trị liên quan cố định.
 ### 3.1. CaseIterable in enumeration cases (CaseIterable trong các trường hợp liệt kê)
