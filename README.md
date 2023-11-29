@@ -520,7 +520,24 @@ if let name = firstPerson["name"] as? String, let age = firstPerson["age"] as? I
 }
 
 ```
-    
+
+```swift
+
+let array: [[String: Any]] = [
+    ["name": "John", "age": 30, "first": "Jo"],
+    ["name": "Hoang", "age": 40, "first": "Jok"],
+    ["name": "Hang", "age": 70, "first": "Jok"]
+]
+```
+```swift
+var emptyArray: [[String: Any]] = []
+
+// Hoặc nếu bạn muốn biến là không thay đổi (immutable), bạn có thể sử dụng `let`:
+let anotherEmptyArray: [[String: Any]] = []
+```
+
+Trong trường hợp trên, **emptyArray** và **anotherEmptyArray** đều là mảng rỗng chứa các từ điển, nhưng **emptyArray** có thể thay đổi giá trị sau khi được khởi tạo (do sử dụng **var**), trong khi **anotherEmptyArray** là không thay đổi (do sử dụng **let**).
+
 #
 
 
