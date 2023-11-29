@@ -496,7 +496,31 @@ class Car: Vehicle {
   </pre>
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div>
-       
+
+7.**"Array of Dictionaries"** có nghĩa là một mảng chứa các từ điển .<br><br>
+Mỗi phần tử trong mảng là một từ điển **(Dictionary)** đại diện cho một bản ghi dữ liệu với các cặp **key-value**. Trong trường hợp này, mỗi từ điển đại diện cho một người với hai thuộc tính là **"name" và "age"**.<br><br>
+```swift
+var peopleArray: [[String: Any]] = []
+
+```
+```swift
+// Khai báo một mảng chứa các từ điển đại diện cho thông tin về người
+var peopleArray: [[String: Any]] = [
+    ["name": "John", "age": 30],
+    ["name": "Hoang", "age": 40],
+    ["name": "Hang", "age": 70]
+]
+
+// Truy cập thông tin của người đầu tiên trong mảng
+let firstPerson = peopleArray[0]
+if let name = firstPerson["name"] as? String, let age = firstPerson["age"] as? Int {
+    print("Name: \(name), Age: \(age)")
+} else {
+    print("Không thể trích xuất thông tin người đầu tiên.")
+}
+
+```
+    
 #
 
 
