@@ -106,7 +106,20 @@ class HomeViewController: UIViewController {
 }
 
 ```
+###
+Trong Swift 5, bạn có thể sử dụng phương thức **joined(separator:)** của lớp **Array** để chuyển đổi một mảng thành một chuỗi. Dưới đây là một ví dụ đơn giản:
+```swift
+let myArray = [1, 2, 3, 4, 5]
 
+// Chuyển mảng thành chuỗi, các phần tử được ngăn cách bởi dấu phẩy và khoảng trắng
+let myString = myArray.map { String($0) }.joined(separator: ", ")
+
+print(myString)
+
+
+```
+
+###
 ## 3.Swift enums (enumerations)
 ### Trong Swift, enum (viết tắt của enumeration) là kiểu dữ liệu do người dùng xác định có một tập hợp các giá trị liên quan cố định.
 ### 3.1. CaseIterable in enumeration cases (CaseIterable trong các trường hợp liệt kê)
