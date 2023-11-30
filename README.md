@@ -499,7 +499,7 @@ class Car: Vehicle {
 
 
 ### [FindMatchingStrings](https://github.com/Experimenters1/Swift_tutorial/tree/main/test4) <br><br>
-Hàm **findMatchingStrings** của bạn chỉ kiểm tra xem phần tử đầu tiên trong mỗi chuỗi con của mảng **array** có tồn tại trong mảng **mainComponents** không. Tuy nhiên, theo mô tả của bạn, bạn muốn kiểm tra xem chuỗi con đó có tồn tại trong mainComponents không.
+Hàm **findMatchingStrings** của bạn chỉ kiểm tra xem phần tử đầu tiên trong mỗi chuỗi con của mảng **array** có tồn tại trong mảng **mainComponents** không. Tuy nhiên, theo mô tả của bạn, bạn muốn kiểm tra xem chuỗi con đó có tồn tại trong **mainComponents** không.
 
 7.**"Array of Dictionaries"** có nghĩa là một mảng chứa các từ điển .<br><br>
 Mỗi phần tử trong mảng là một từ điển **(Dictionary)** đại diện cho một bản ghi dữ liệu với các cặp **key-value**. Trong trường hợp này, mỗi từ điển đại diện cho một người với hai thuộc tính là **"name" và "age"**.<br><br>
