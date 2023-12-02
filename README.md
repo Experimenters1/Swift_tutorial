@@ -498,7 +498,7 @@ class Car: Vehicle {
 </div>
 
 
-### [FindMatchingStrings](https://github.com/Experimenters1/Swift_tutorial/tree/main/test4) <br><br>
+### [FindMatchingStrings](https://github.com/Experimenters1/Swift_tutorial/blob/main/test4/test4/ViewController.swift) <br><br>
 Hàm **findMatchingStrings** của bạn chỉ kiểm tra xem phần tử đầu tiên trong mỗi chuỗi con của mảng **array** có tồn tại trong mảng **mainComponents** không. Tuy nhiên, theo mô tả của bạn, bạn muốn kiểm tra xem chuỗi con đó có tồn tại trong **mainComponents** không.
 
 7.**"Array of Dictionaries"** có nghĩa là một mảng chứa các từ điển .<br><br>
