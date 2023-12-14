@@ -15,6 +15,12 @@ Swift Storyboard
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div> <br>
 
+![image](https://github.com/Experimenters1/Swift_tutorial/assets/64000769/31a6f770-7ea0-4219-8555-7956c0d25ce5) <br>
+ 
+![image](https://github.com/Experimenters1/Swift_tutorial/assets/64000769/20452131-77b7-490f-9453-5e39c72f23e9) <br>
+
+
+
 ##
 ## Để in ra kiểu của một biến trong Swift, bạn có thể sử dụng hàm type(of:). Dưới đây là một ví dụ:
 ```swift
