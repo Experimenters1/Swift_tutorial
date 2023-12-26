@@ -444,6 +444,14 @@ class Car: Vehicle {
 #
 
 ## Swift Data structures (cấu trúc dữ liệu)
++ ) Swift không có cấu trúc dữ liệu được gọi một cách cụ thể là **"list"**. Thay vào đó, Swift sử dụng **Array, Set, và Dictionary** làm các cấu trúc dữ liệu chính.<br><br>
+
++ ) **Array** trong Swift là một cấu trúc dữ liệu động, có thể thay đổi kích thước và có thể chứa các phần tử cùng loại. <br><br>
+
++ ) Ngoài **Array**, Swift còn có **ArraySlice** (để trích xuất một phần của mảng) và **ContiguousArray** (một biến thể của mảng với một số tối ưu hóa về hiệu suất). <br><br>
+
+
+
 1.Mảng (Array): Là một cấu trúc dữ liệu đơn giản, lưu trữ các phần tử có cùng kiểu dữ liệu theo một thứ tự xác định. Các phần tử trong mảng có thể được truy cập thông qua chỉ số <br><br>
 <div class="code-snippet">
   <pre>
