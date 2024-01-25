@@ -78,6 +78,51 @@ let emptyString = downloadURL.absoluteString
 let downloadURL1 = URL(string: emptyString)
 ```
 #
+
+## Convert int to string
+```swift
+  var helloCount = 1
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        print("hello\(helloCount)")
+        
+        print("Kiểu của biến là: \(type(of: helloCount))")
+        
+        print()
+        print("convert int to string : ")
+        
+
+        
+        // Chuyển đổi giá trị Int sang String
+        let text = "\(helloCount)"
+        print("Kiểu của biến là: \(type(of: text))")
+        
+    }
+```
+```swift
+var helloCount = 1
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        print("hello\(helloCount)")
+        
+        print("Kiểu của biến là: \(type(of: helloCount))")
+        
+        print()
+        print("convert int to string : ")
+        
+                // Chuyển đổi giá trị Int sang String
+                let text = String(helloCount)
+                print("Kiểu của biến là: \(type(of: text))")
+        
+    }
+
+```
 #
 
 ## Trong Swift 5, để khai báo một biến có kiểu UIImage, bạn có thể sử dụng cú pháp sau:
