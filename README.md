@@ -605,6 +605,7 @@ Trong trường hợp trên, **emptyArray** và **anotherEmptyArray** đều là
 #
 ### Cách định nghĩa array trong một func của swift 5
 # Trong Swift 5, bạn có thể định nghĩa một mảng (array) trong một hàm (func) bằng cách sử dụng cú pháp sau:
+
 ```swift
 func myFunction() {
     // Định nghĩa một mảng các số nguyên
@@ -662,11 +663,11 @@ func myFunction() {
 
 // Gọi hàm
 myFunction()
-``
+```
 
 
 #
-## Swift "Algorithm" (thuật toán)
+##  Swift "Algorithm" (thuật toán)
 1.Xử lý dữ liệu từ các thành phần UI: Khi người dùng tương tác với các thành phần UI như UITextField, UITableView, hay UICollectionView, bạn cần thu thập dữ liệu nhập vào, thực hiện kiểm tra tính hợp lệ, và xử lý dữ liệu được trả về từ các thành phần này. <br><br>
 2.Quản lý dữ liệu của ứng dụng: Đối với ứng dụng có dữ liệu phức tạp như danh bạ, các mục trong bảng điều khiển, hoặc các phần tử trong danh sách, bạn cần áp dụng các thuật toán quản lý dữ liệu, như cập nhật, thêm mới, xóa bỏ, tìm kiếm dữ liệu một cách hiệu quả.<br><br>
 3.Tích hợp và gọi API từ server: Thuật toán này giúp ứng dụng giao tiếp với các dịch vụ máy chủ bên ngoài thông qua việc gọi API và xử lý dữ liệu được trả về. Phần này thường sử dụng các phương thức như URLSession, Alamofire, hay SwiftyJSON để giao tiếp và xử lý dữ liệu trả về từ máy chủ.<br><br>
