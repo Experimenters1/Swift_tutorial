@@ -626,7 +626,8 @@ func myFunction() {
 myFunction()
 ```
 
-``swift
+
+```swift
 func myFunction() {
     // Định nghĩa một mảng các chuỗi có thể chứa bất kỳ giá trị nào
     var stringArray: [String] = []
@@ -641,10 +642,12 @@ func myFunction() {
 
 // Gọi hàm
 myFunction()
+
 ```
 
 
-``swift
+
+```swift
 func myFunction() {
     // Định nghĩa một mảng của các từ điển với khóa là String và giá trị có thể là bất kỳ kiểu nào
     var arrayOfDictionaries: [[String: Any]] = []
