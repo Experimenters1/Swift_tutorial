@@ -602,8 +602,70 @@ let anotherEmptyArray: [[String: Any]] = []
 Trong trường hợp trên, **emptyArray** và **anotherEmptyArray** đều là mảng rỗng chứa các từ điển, nhưng **emptyArray** có thể thay đổi giá trị sau khi được khởi tạo (do sử dụng **var**), trong khi **anotherEmptyArray** là không thay đổi (do sử dụng **let**).
 
 #
+#
+### Cách định nghĩa array trong một func của swift 5
+# Trong Swift 5, bạn có thể định nghĩa một mảng (array) trong một hàm (func) bằng cách sử dụng cú pháp sau:
+```swift
+func myFunction() {
+    // Định nghĩa một mảng các số nguyên
+    var myArray = [Int]()
+    
+    // Hoặc có thể khởi tạo mảng với các giá trị ban đầu
+    var anotherArray = [1, 2, 3, 4, 5]
+    
+    // Thực hiện các thao tác với mảng
+    // ...
+    
+    // In mảng ra màn hình
+    print(myArray)
+    print(anotherArray)
+}
+
+// Gọi hàm
+myFunction()
+
+```
+
+``swift
+func myFunction() {
+    // Định nghĩa một mảng các chuỗi có thể chứa bất kỳ giá trị nào
+    var stringArray: [String] = []
+
+    // Thêm các giá trị vào mảng
+    stringArray.append("Hello")
+    stringArray.append(123) // Điều này vẫn hợp lệ với kiểu Any
+
+    // In mảng ra màn hình
+    print(stringArray)
+}
+
+// Gọi hàm
+myFunction()
+```
+
+``swift
+func myFunction() {
+    // Định nghĩa một mảng của các từ điển với khóa là String và giá trị có thể là bất kỳ kiểu nào
+    var arrayOfDictionaries: [[String: Any]] = []
+
+    // Tạo một từ điển và thêm vào mảng
+    let dictionary1: [String: Any] = ["key1": "value1", "key2": 123]
+    arrayOfDictionaries.append(dictionary1)
+
+    // Tạo một từ điển khác và thêm vào mảng
+    let dictionary2: [String: Any] = ["name": "John", "age": 30, "isStudent": true]
+    arrayOfDictionaries.append(dictionary2)
+
+    // In mảng ra màn hình
+    print(arrayOfDictionaries)
+}
+
+// Gọi hàm
+myFunction()
+``
 
 
+#
 ## Swift "Algorithm" (thuật toán)
 1.Xử lý dữ liệu từ các thành phần UI: Khi người dùng tương tác với các thành phần UI như UITextField, UITableView, hay UICollectionView, bạn cần thu thập dữ liệu nhập vào, thực hiện kiểm tra tính hợp lệ, và xử lý dữ liệu được trả về từ các thành phần này. <br><br>
 2.Quản lý dữ liệu của ứng dụng: Đối với ứng dụng có dữ liệu phức tạp như danh bạ, các mục trong bảng điều khiển, hoặc các phần tử trong danh sách, bạn cần áp dụng các thuật toán quản lý dữ liệu, như cập nhật, thêm mới, xóa bỏ, tìm kiếm dữ liệu một cách hiệu quả.<br><br>
