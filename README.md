@@ -624,7 +624,6 @@ func myFunction() {
 
 // Gọi hàm
 myFunction()
-
 ```
 
 ``swift
@@ -643,6 +642,7 @@ func myFunction() {
 // Gọi hàm
 myFunction()
 ```
+
 
 ``swift
 func myFunction() {
