@@ -640,8 +640,8 @@ class ViewController: UIViewController {
 
 #
 #
-### Cách định nghĩa array trong một func của swift 5
-# Trong Swift 5, bạn có thể định nghĩa một mảng (array) trong một hàm (func) bằng cách sử dụng cú pháp sau:
+# Cách định nghĩa array trong một func của swift 5
+## Trong Swift 5, bạn có thể định nghĩa một mảng (array) trong một hàm (func) bằng cách sử dụng cú pháp sau:
 
 ```swift
 func myFunction() {
