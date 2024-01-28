@@ -638,6 +638,53 @@ class ViewController: UIViewController {
 
 ```
 
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+
+    var array_photo: [[String: Any]] = [
+        [
+            "emptyString": "https://firebasestorage.googleapis.com:443/v0/b/test2-2d92c.appspot.com/o/DuxIrWfjTwZFgJ23vwotG42l3Wv2%2FF5360A8D-DCAD-4DE2-84D7-6F56FCC8D573.png?alt=media&token=6fe6baa9-83c6-42ac-bbe8-a058b6d81189",
+            "photo_Sender": "DuxIrWfjTwZFgJ23vwotG42l3Wv2",
+            "friendID": "A7EC0FD9-F186-4F52-9BCE-EA5596510739"
+        ],
+        [
+            "photo_Sender": "XuxIrWfjTwZFgJ23vwotG42l3Wv2",
+            "emptyString": "https://firebasestorage.googleapis.com:443/v0/b/test2-2d92c.appspot.com/o/DuxIrWfjTwZFgJ23vwotG42l3Wv2%2FF720A77C-360E-4F23-B3F1-DF8729B2BBB7.png?alt=media&token=2bc7e00a-0dc8-47f3-82a5-c0ef9ccf1da1",
+            "friendID": "43D9A325-3648-47EA-96C4-C612D9B8428F"
+        ],
+        [
+            "photo_Sender": "78uxIrWfjTwZFgJ23vwotG42l3Wv2",
+            "emptyString": "https://firebasestorage.googleapis.com:443/v0/b/test2-2d92c.appspot.com/o/DuxIrWfjTwZFgJ23vwotG42l3Wv2%2FF720A77C-360E-4F23-B3F1-DF8729B2BBB7.png?alt=media&token=2bc7e00a-0dc8-47f3-82a5-c0ef9ccf1da1",
+            "friendID": "43D9A325-3648-47EA-96C4-C612D9B8428F"
+        ]
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        // Lọc mảng trong dictionary không chứa key-value "photo_Sender": "DuxIrWfjTwZFgJ23vwotG42l3Wv2"
+        let filteredArray = array_photo.filter { dictionary in
+            if let photoSender = dictionary["photo_Sender"] as? String {
+                return photoSender != "DuxIrWfjTwZFgJ23vwotG42l3Wv2"
+            }
+            return false
+        }
+
+        // In ra mảng cuối cùng trong dictionary
+        if let lastArray = filteredArray.last {
+            print(lastArray)
+        }
+    }
+
+     
+}
+
+
+```
+
 #
 #
 # Cách định nghĩa array trong một func của swift 5
