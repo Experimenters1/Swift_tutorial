@@ -684,6 +684,27 @@ class ViewController: UIViewController {
 
 
 ```
+```swift
+   override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        // Lọc mảng trong dictionary không chứa key-value "photo_Sender": "DuxIrWfjTwZFgJ23vwotG42l3Wv2"
+                let filteredArray = array_photo.filter { dictionary in
+                    if let photoSender = dictionary["photo_Sender"] as? String {
+                        return photoSender != "DuxIrWfjTwZFgJ23vwotG42l3Wv2"
+                    }
+                    return false
+                }
+
+                // In ra mảng cuối cùng trong dictionary
+                if let lastArray = filteredArray.last {
+                    
+                    if let name = lastArray["emptyString"] as? String {
+                        print(name)
+                    }
+        }
+    }
+```
 
 #
 #
