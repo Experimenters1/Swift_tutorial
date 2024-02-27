@@ -487,7 +487,7 @@ class Car: Vehicle {
 
 ## 2.Đóng gói (Encapsulation):<br><br>
 ## 3.Đa hình (Polymorphism): <br><br>
-
+## 4.Abstraction (Trừu tượng):  <br><br>
 #
 
 ## Swift Data structures (cấu trúc dữ liệu)
