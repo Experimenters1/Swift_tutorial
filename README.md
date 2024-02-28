@@ -558,12 +558,46 @@ class Car: Vehicle {
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div>
 
-6.Khi bạn muốn sử dụng giá trị bên trong một biến Optional, bạn cần thực hiện bước gọi là "unwrapping".
+7.Khi bạn muốn sử dụng giá trị bên trong một biến **Optional**, bạn cần thực hiện bước gọi là **"unwrapping"**.<br><br>
+**Unwrapping** là quá trình trích xuất giá trị từ một **Optional** để sử dụng nó. Có một số cách để **unwrap một Optional**, như:<br><br>
+**7.1.Forced Unwrapping (!):** <br><br>
+Bạn có thể sử dụng dấu chấm than **(!)** để bắt buộc **unwrapping**, nhưng điều này có thể dẫn đến lỗi **runtime nếu Optional** là **nil.** <br><br>
+```swift
+let unwrappedAge = age!
+```
+**7.2.Optional Binding (if let, guard let)::** <br><br>
+Đây là cách an toàn hơn. Bạn sử dụng **if let hoặc guard let** để kiểm tra xem **Optional** có giá trị hay không và gán giá trị đó vào một biến mới. <br><br>
+```swift
+if let unwrappedAge = age {
+    // sử dụng unwrappedAge ở đây, giá trị đã được gán nếu age không nil
+} else {
+    // age là nil
+}
+
+```
+
+**7.3.Nil Coalescing Operator (??):** <br><br>
+
+Cho phép bạn cung cấp một giá trị mặc định nếu **Optional** là **nil.** <br><br>
+```swift
+let actualAge = age ?? 0 // Nếu age là nil, actualAge sẽ là 0
+
+```
+
+**7.4.Optional Chaining:** <br><br>
+Cho phép bạn liên kết nhiều **Optional** lại với nhau mà không cần unwrapping, và trả về nil nếu bất kỳ **Optional** nào trong chuỗi là **nil.** <br><br>
+```swift
+let nameLength = person?.name?.count
+
+```
+
+Unwrapping được sử dụng để đảm bảo an toàn khi xử lý giá trị **Optional** và tránh các lỗi **runtime** không mong muốn. <br><br>
+
 
 ### [FindMatchingStrings](https://github.com/Experimenters1/Swift_tutorial/blob/main/test4/test4/ViewController.swift) <br><br>
 Hàm **findMatchingStrings** của bạn chỉ kiểm tra xem phần tử đầu tiên trong mỗi chuỗi con của mảng **array** có tồn tại trong mảng **mainComponents** không. Tuy nhiên, theo mô tả của bạn, bạn muốn kiểm tra xem chuỗi con đó có tồn tại trong **mainComponents** không.
 
-7.**"Array of Dictionaries"** có nghĩa là một mảng chứa các từ điển .<br><br>
+8.**"Array of Dictionaries"** có nghĩa là một mảng chứa các từ điển .<br><br>
 Mỗi phần tử trong mảng là một từ điển **(Dictionary)** đại diện cho một bản ghi dữ liệu với các cặp **key-value**. Trong trường hợp này, mỗi từ điển đại diện cho một người với hai thuộc tính là **"name" và "age"**.<br><br>
 ```swift
 var peopleArray: [[String: Any]] = []
