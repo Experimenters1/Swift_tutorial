@@ -2,7 +2,6 @@
 Swift Storyboard
 #
 
-[Unwrapping](https://chat.openai.com/c/11f484bc-8132-43fa-bc2d-596869a3cec1) <br><br>
 #
 
 ### Keywords in search
