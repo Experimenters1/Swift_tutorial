@@ -558,6 +558,7 @@ class Car: Vehicle {
   <button class="copy-button" data-clipboard-target=".code-snippet"></button>
 </div>
 
+6.Khi bạn muốn sử dụng giá trị bên trong một biến Optional, bạn cần thực hiện bước gọi là "unwrapping".
 
 ### [FindMatchingStrings](https://github.com/Experimenters1/Swift_tutorial/blob/main/test4/test4/ViewController.swift) <br><br>
 Hàm **findMatchingStrings** của bạn chỉ kiểm tra xem phần tử đầu tiên trong mỗi chuỗi con của mảng **array** có tồn tại trong mảng **mainComponents** không. Tuy nhiên, theo mô tả của bạn, bạn muốn kiểm tra xem chuỗi con đó có tồn tại trong **mainComponents** không.
