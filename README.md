@@ -429,64 +429,33 @@ OOP là viết tắt của "Object-Oriented Programming" (Lập trình hướng 
 Ý tưởng chính của OOP là mô phỏng thế giới thực bằng cách tạo ra các đối tượng tương ứng với các thực thể trong thế giới thực. Mỗi đối tượng có thể tương tác với nhau thông qua các phương thức, và đồng thời, các đối tượng cũng có thể được tạo ra bằng cách sử dụng các lớp (classes) - một bản thiết kế để tạo đối tượng. <br> <br>
 
 Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
-## 1.Kế thừa (Inheritance):<br><br>
-Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:<br><br>
+## 1.Kế thừa (Inheritance): Tạo ra lớp mới từ lớp hiện có, kế thừa thuộc tính và phương thức. <br><br>
+## 2.Đóng gói (Encapsulation): Che giấu chi tiết triển khai, chỉ truy cập thành phần public. <br><br>
+## 3.Đa hình (Polymorphism): Thực hiện hành động khác nhau cho các đối tượng khác nhau.<br><br>
+## 4.Abstraction (Trừu tượng): Tập trung vào đặc điểm chung, bỏ qua chi tiết cụ thể. <br><br>
 
-**1.1.Tên và cú pháp:**
+**Lợi ích:** <br><br>
 
-+ ) Trong **Swift**, chúng ta sử dụng từ khóa **"protocol"** để định nghĩa một **protocol**. Cú pháp định nghĩa **protocol** như sau: **protocol MyProtocol { ... }**.
-+ ) Trong một số ngôn ngữ khác như **Java hoặc C#**, chúng ta sử dụng từ khóa **"interface"** để định nghĩa một giao diện. Cú pháp định nghĩa giao diện như sau: **interface MyInterface { ... }.**
++) Tái sử dụng mã <br><br>
++) Tăng tính bảo trì <br><br>
++) Dễ dàng mở rộng <br><br>
++) Viết code modular và linh hoạt <br><br>
 
-**1.2.Kế thừa:**
+**Công cụ:**  <br><br>
++) Protocol: Định nghĩa tập hợp thuộc tính và phương thức cho kiểu dữ liệu. <br><br>
++) Class: Tạo ra đối tượng với thuộc tính và phương thức. <br><br>
++) Struct: Kiểu dữ liệu đơn giản, không thay đổi, không hỗ trợ kế thừa. <br><br>
++) Enum: Định nghĩa tập hợp giá trị có liên quan. <br><br>
++) Extension: Mở rộng chức năng cho kiểu dữ liệu hiện có. <br><br>
++) Generics: Tạo kiểu dữ liệu và thuật toán hoạt động với nhiều loại dữ liệu. <br><br>
 
-+ ) Một lớp **(class)** trong Swift có thể kế thừa từ nhiều **protocol** khác nhau bằng cách liệt kê chúng sau từ khóa **"class"**. Ví dụ: **class MyObject: Protocol1, Protocol2 { ... }.**
-+ ) Trong một số ngôn ngữ khác, một lớp chỉ có thể kế thừa từ một lớp cha và triển khai một giao diện. **Swift** cho phép mô hình đa kế thừa bằng cách sử dụng nhiều **protocol**.
+**Chú Ý :** Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:<br><br>
 
-**1.3.Triển khai :**
+**Tên và cú pháp:** <br><br>
 
-+ ) Một lớp trong **Swift** có thể triển khai nhiều **protocol** và phải cung cấp triển khai cho tất cả các yêu cầu của các **protocol** đó.
-+ ) Một lớp triển khai một giao diện trong các ngôn ngữ khác phải thực hiện tất cả các phương thức của giao diện đó.
++ ) Trong **Swift**, chúng ta sử dụng từ khóa **"protocol"** để định nghĩa một **protocol**. Cú pháp định nghĩa **protocol** như sau: **protocol MyProtocol { ... }**.<br><br>
++ ) Trong một số ngôn ngữ khác như **Java hoặc C#**, chúng ta sử dụng từ khóa **"interface"** để định nghĩa một giao diện. Cú pháp định nghĩa giao diện như sau: **interface MyInterface { ... }.** <br><br>
 
-**1.4.Khả năng :**
-
-+ )**Protocol** trong **Swift** có thể được áp dụng cho nhiều kiểu dữ liệu khác nhau, bao gồm cả **class, struct, và enum.**
-+ )Giao diện trong các ngôn ngữ khác thường chỉ áp dụng cho các lớp **(class)** hoặc một kiểu dữ liệu cụ thể.
-
-Trong lập trình **Swift**, **"protocol"** là một phần quan trọng của ngôn ngữ được sử dụng để định nghĩa một tập hợp các yêu cầu **(requirements)** hoặc giao diện mà một lớp **(class)**, cấu trúc **(struct)**, hoặc **enum (enumeration)** phải tuân theo. Các **protocol** định nghĩa một bộ các phương thức, thuộc tính và/hoặc yêu cầu khác mà một kiểu dữ liệu cụ thể cần phải triển khai.
-
-
-Ví dụ, bạn có thể tạo một **protocol** để đại diện cho các phương tiện vận chuyển:<br> <br>
-
-
-```swift
-protocol Vehicle {
-    var numberOfWheels: Int { get }
-    func startEngine()
-    func stopEngine()
-}
-
-```
-Sau đó, bạn có thể tạo các lớp hoặc cấu trúc mới tuân theo **protocol** này và triển khai các yêu cầu cụ thể của nó:<br> <br>
-
-```swift
-
-class Car: Vehicle {
-    var numberOfWheels: Int = 4
-    
-    func startEngine() {
-        // Code để bật động cơ của xe hơi
-    }
-    
-    func stopEngine() {
-        // Code để tắt động cơ của xe hơi
-    }
-}
-
-```
-
-## 2.Đóng gói (Encapsulation):<br><br>
-## 3.Đa hình (Polymorphism): <br><br>
-## 4.Abstraction (Trừu tượng):  <br><br>
 #
 
 ## Swift Data structures (cấu trúc dữ liệu)
