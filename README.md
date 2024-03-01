@@ -459,7 +459,17 @@ Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
 Lợi ích:<br><br>
 
 1.Tái sử dụng mã: Sử dụng protocol và kế thừa giúp tái sử dụng mã trong đoạn code. Ví dụ, các đối tượng **NormalPerson và Student** có thể chia sẻ cùng một logic xử lý thông tin người trong **PersonViewModel.** <br><br>
-2.
+2.Tăng tính bảo trì: Sự phân chia logic thành các đối tượng riêng biệt và sử dụng kế thừa giúp tăng tính bảo trì của mã. Bất kỳ thay đổi nào cần thiết đối với logic của một loại người có thể được thực hiện một cách riêng biệt mà không ảnh hưởng đến các loại khác. <br><br>
+3.Dễ dàng mở rộng: Sử dụng protocol, kế thừa và đa hình giúp cho việc mở rộng mã trở nên dễ dàng hơn. Bạn có thể dễ dàng thêm các loại người mới mà không làm thay đổi quá nhiều code hiện có. <br><br>
+4.Viết code modular và linh hoạt: Sử dụng các công cụ như protocol, class, struct, enum, extension và generics giúp viết code trở nên modular và linh hoạt. Các đối tượng và logic được phân chia thành các phần nhỏ độc lập, dễ dàng tái sử dụng và mở rộng. <br><br>
+
+**Công cụ:** <br><br>
++ ) **Protocol:** Được sử dụng để định nghĩa tập hợp thuộc tính và phương thức cho kiểu dữ liệu, như protocol **Person.** <br><br>
++ ) **Class:** Sử dụng để tạo ra đối tượng với thuộc tính và phương thức, như class **PersonViewModel.** <br><br>
++ ) **Struct:** Dùng để định nghĩa kiểu dữ liệu đơn giản, không thay đổi, không hỗ trợ kế thừa, như **NormalPerson và Student.** <br><br>
++ ) **Enum:** Được sử dụng để định nghĩa tập hợp giá trị có liên quan, như enum **PersonType.** <br><br>
++ ) **Extension:** Mở rộng chức năng cho kiểu dữ liệu hiện có, không cần phải thay đổi mã nguồn gốc, giúp viết code linh hoạt hơn. <br><br>
++ ) **Generics:** Sử dụng để tạo kiểu dữ liệu và thuật toán hoạt động với nhiều loại dữ liệu khác nhau. Trong đoạn code trên, generics không được sử dụng trực tiếp, nhưng chúng có thể được áp dụng trong các trường hợp khác. <br><br>
 
 **Chú Ý :** Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:<br><br>
 
