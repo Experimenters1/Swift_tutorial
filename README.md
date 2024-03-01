@@ -449,6 +449,18 @@ Các nguyên tắc cơ bản của OOP bao gồm: <br> <br>
 +) Extension: Mở rộng chức năng cho kiểu dữ liệu hiện có. <br><br>
 +) Generics: Tạo kiểu dữ liệu và thuật toán hoạt động với nhiều loại dữ liệu. <br><br>
 
+[**Ví dụ minh họa:**]() <br><br>
+
+**+ ) Kế thừa (Inheritance):** Trong đoạn code, kế thừa được thể hiện qua việc các struct **NormalPerson** và **Student** conform protocol **Person**. Cả hai struct này kế thừa các thuộc tính và phương thức được định nghĩa trong protocol **Person.** <br><br>
+**+ ) Đóng gói (Encapsulation):** Phần triển khai của đóng gói được thấy trong class **PersonViewModel.** Trong class này, thuộc tính **person** được khai báo là **private**, chỉ cho phép truy cập bên trong class. Các thuộc tính **name** và **age** được trả về thông qua các getter public, nhưng không thể trực tiếp được truy cập từ bên ngoài class.<br><br>
+**+ ) Đa hình (Polymorphism):** Đa hình được áp dụng thông qua việc sử dụng protocol **Person.** Cả **NormalPerson** và **Student** đều conform protocol này, nên chúng có thể được xử lý như là các đối tượng của cùng một loại **(Person).** <br><br>
+**+ ) Trừu tượng (Abstraction):** Trừu tượng được thể hiện qua việc định nghĩa protocol **Person.** Protocol này tập trung vào các đặc điểm chung của một người như **name, age và type,** bỏ qua chi tiết cụ thể của từng loại người. <br><br>
+
+Lợi ích:<br><br>
+
+1.Tái sử dụng mã: Sử dụng protocol và kế thừa giúp tái sử dụng mã trong đoạn code. Ví dụ, các đối tượng **NormalPerson và Student** có thể chia sẻ cùng một logic xử lý thông tin người trong **PersonViewModel.** <br><br>
+2.
+
 **Chú Ý :** Trong ngôn ngữ lập trình **Swift**, **"protocol"** tương tự với khái niệm **"interface"** trong một số ngôn ngữ lập trình khác như Java hoặc C#. Tuy nhiên, có một số sự khác biệt quan trọng giữa chúng. Dưới đây là những sự khác biệt chính giữa **protocol** và **interface**:<br><br>
 
 **Tên và cú pháp:** <br><br>
