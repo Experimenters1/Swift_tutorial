@@ -809,8 +809,8 @@ myFunction()
 3.Tích hợp và gọi API từ server: Thuật toán này giúp ứng dụng giao tiếp với các dịch vụ máy chủ bên ngoài thông qua việc gọi API và xử lý dữ liệu được trả về. Phần này thường sử dụng các phương thức như URLSession, Alamofire, hay SwiftyJSON để giao tiếp và xử lý dữ liệu trả về từ máy chủ.<br><br>
 4.Tối ưu hóa hiệu suất: Đảm bảo ứng dụng chạy mượt mà và không gây tốn tài nguyên quá nhiều là một trong những vấn đề quan trọng. Điều này bao gồm tối ưu hóa thời gian phản hồi của ứng dụng, giảm thiểu thiêu thụ pin, và tránh các vấn đề liên quan đến bộ nhớ.<br><br>
 5.Xử lý các vấn đề bất đồng bộ: Đôi khi, việc thực hiện các tác vụ bất đồng bộ, như tải dữ liệu từ internet, có thể gây ra các vấn đề liên quan đến luồng (thread). Thuật toán sử dụng Dispatch Queue và GCD (Grand Central Dispatch) để quản lý các tác vụ bất đồng bộ một cách an toàn và hiệu quả.<br><br>
-6.Thuật toán tùy chỉnh trong giao diện người dùng: Trong trường hợp bạn muốn thay đổi giao diện dựa trên các dữ liệu hoặc tương tác người dùng, bạn cần áp dụng các thuật toán để điều chỉnh các thuộc tính của các thành phần UI một cách động.
+6.Thuật toán tùy chỉnh trong giao diện người dùng: Trong trường hợp bạn muốn thay đổi giao diện dựa trên các dữ liệu hoặc tương tác người dùng, bạn cần áp dụng các thuật toán để điều chỉnh các thuộc tính của các thành phần UI một cách động.<br><br>
 
-https://chatgpt.com/c/14bd2008-4d3d-4efb-8c8e-487e98645d3c
+https://chatgpt.com/c/14bd2008-4d3d-4efb-8c8e-487e98645d3c <br><br>
 
-
+https://chatgpt.com/c/0f16065a-f030-444c-ad77-236c7fbdd12f <br><br>
